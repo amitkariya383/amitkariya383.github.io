@@ -1,15 +1,88 @@
 <!DOCTYPE html>
-<html>
+<html lang="hi">
 <head>
-    <title>Amit Kariya Studios</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amit Kariya Studios | Apps</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding: 50px; background-color: #f4f4f4; }
-        h1 { color: #333; }
-        p { color: #666; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #0f172a; color: #f8fafc; padding-bottom: 60px; }
+        
+        /* Header Section */
+        header { background: linear-gradient(135deg, #1e3a8a, #3b82f6); padding: 80px 20px; text-align: center; border-bottom: 4px solid #60a5fa; }
+        header h1 { font-size: 3em; font-weight: 800; letter-spacing: -1px; margin-bottom: 10px; text-shadow: 0 2px 4px rgba(0,0,0,0.2); }
+        header p { font-size: 1.2em; color: #bfdbfe; max-width: 600px; margin: 0 auto; line-height: 1.6; }
+        
+        /* Apps Container */
+        .container { max-width: 1100px; margin: 50px auto; padding: 0 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+        
+        /* App Cards */
+        .app-card { background-color: #1e293b; border-radius: 20px; border: 1px solid #334155; padding: 35px 25px; text-align: center; box-shadow: 0 10px 30px rgba(0,0,0,0.3); transition: all 0.3s ease; }
+        .app-card:hover { transform: translateY(-10px); border-color: #3b82f6; box-shadow: 0 20px 4px rgba(59,130,246,0.1); }
+        
+        /* App Icons */
+        .app-icon { width: 100px; height: 100px; border-radius: 24px; margin: 0 auto 20px; display: flex; align-items: center; justify-content: center; font-size: 2.2em; font-weight: bold; box-shadow: 0 8px 16px rgba(0,0,0,0.2); }
+        .dm-icon { background: linear-gradient(135deg, #06b6d4, #3b82f6); }
+        .mm-icon { background: linear-gradient(135deg, #f97316, #ef4444); }
+        
+        .app-card h3 { font-size: 1.6em; margin-bottom: 12px; color: #fff; }
+        .app-card p { font-size: 1em; color: #94a3b8; line-height: 1.6; min-height: 70px; margin-bottom: 25px; }
+        
+        /* Google Play Button Styling */
+        .play-store-btn { display: inline-flex; align-items: center; background-color: #000; color: #fff; border: 1px solid #a4a4a4; border-radius: 8px; padding: 10px 20px; text-decoration: none; text-align: left; transition: background 0.2s; }
+        .play-store-btn:hover { background-color: #222; }
+        .play-store-btn img { width: 30px; height: 30px; margin-right: 12px; }
+        .btn-text { display: flex; flex-direction: column; }
+        .btn-text .small-text { font-size: 0.7em; text-transform: uppercase; letter-spacing: 0.5px; color: #b3b3b3; }
+        .btn-text .big-text { font-size: 1.1em; font-weight: 600; }
+        
+        /* Footer */
+        footer { text-align: center; margin-top: 80px; color: #64748b; font-size: 0.9em; }
+        footer a { color: #3b82f6; text-decoration: none; font-weight: 500; }
+        footer a:hover { text-decoration: underline; }
     </style>
 </head>
 <body>
-    <h1>Amit Kariya Studios</h1>
-    <p>Welcome to our official website. Check out our apps on Google Play Store!</p>
+
+    <header>
+        <h1>Amit Kariya Studios</h1>
+        <p>हम बनाते हैं आपके दैनिक जीवन को आसान और मनोरंजक बनाने वाले बेहतरीन एंड्रॉइड ऐप्स।</p>
+    </header>
+
+    <div class="container">
+        <!-- Delhi Metro Planner Card -->
+        <div class="app-card">
+            <div class="app-icon dm-icon">DM</div>
+            <h3>Delhi Metro Planner</h3>
+            <p>दिल्ली मेट्रो की सटीक समय-सारणी, रूट्स, इंटरचेंज स्टेशनों और किराए की पूरी जानकारी एक ही जगह पर पाएं।</p>
+            <a href="YOUR_DELHI_METRO_PLAY_STORE_LINK" class="play-store-btn">
+                <img src="wikimedia.org" alt="Play Store">
+                <div class="btn-text">
+                    <span class="small-text">GET IT ON</span>
+                    <span class="big-text">Google Play</span>
+                </div>
+            </a>
+        </div>
+
+        <!-- Mithai Mania Card -->
+        <div class="app-card">
+            <div class="app-icon mm-icon">MM</div>
+            <h3>Mithai Mania</h3>
+            <p>भारत की सबसे प्रसिद्ध और स्वादिष्ट मिठाइयों की रेसिपी गाइड। अब घर पर ही बनाएं हलवाई जैसी मिठाइयाँ।</p>
+            <a href="YOUR_MITHAI_MANIA_PLAY_STORE_LINK" class="play-store-btn">
+                <img src="wikimedia.org" alt="Play Store">
+                <div class="btn-text">
+                    <span class="small-text">GET IT ON</span>
+                    <span class="big-text">Google Play</span>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Amit Kariya Studios. सर्वाधिकार सुरक्षित।</p>
+        <p style="margin-top: 10px;">जांचें हमारी <a href="YOUR_PRIVACY_POLICY_LINK">Privacy Policy</a></p>
+    </footer>
+
 </body>
 </html>
